@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+*{
+  
+  font-family: "tangerine", cursive;
+  
+  box-sizing: border-box;
+}
+
+html{
+  background-color: rgb(8, 97, 67);
+}
+
+.relleno-letras{
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.letra{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.letrador{
+  color: #c0b1a2
+}
+
+/* .tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+} */
