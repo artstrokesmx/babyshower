@@ -44,7 +44,7 @@ function Fecha() {
                 {tiempo.dias} días, {tiempo.horas} horas, {tiempo.minutos} minutos, {tiempo.segundos} segundos
             </div>
             <div className="w-full h-40">
-                <img className=" relative left-1/2 top-1/2 w-32 -translate-x-1/2 -translate-y-1/2 animate-bounce" src="/assets/ele.png" alt="Elefante" />
+                <img className=" relative left-1/2 top-1/2 w-32 -translate-x-1/2 -translate-y-1/2 animate-bounce" src="/babyshower/assets/ele.png" alt="Elefante" />
             </div>
         </div>
     );
