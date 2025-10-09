@@ -30,8 +30,8 @@ function App() {
   return (
     <div className="bg-green-900 min-h-screen overflow-hidden">
       <div className="fixed inset-0 pointer-events-none">
-        <img className="w-full translate-x-50 translate-y-[-80px] fixed" src="../src/assets/marcoderarr.png" alt="Marco superior derecho" />
-        <img className="w-full translate-x-[-150px] fixed" src="../src/assets/marcoizqbaj.png" alt="Marco inferior izquierdo" />
+  <img className="w-full translate-x-50 translate-y-[-80px] fixed" src="/assets/marcoderarr.png" alt="Marco superior derecho" />
+  <img className="w-full translate-x-[-150px] fixed" src="/assets/marcoizqbaj.png" alt="Marco inferior izquierdo" />
       </div>
       <div className="">
         <Bienvenida nombre={invitado.nombre} apellido={invitado.apellido} />
