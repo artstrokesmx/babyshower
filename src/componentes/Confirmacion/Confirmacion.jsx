@@ -54,17 +54,17 @@ function Confirmacion() {
 
     return (
         <div className="mt-5 mx-auto max-w-xs md:max-w-sm p-4">
-            <h2 className="text-4xl text-center mb-5 letrador">Confirmación</h2>
-            <p className="text-xl text-center mb-5">Por favor confirma tu asistencia antes del 10 de Octubre</p>
+            <h2 className="text-6xl text-center mb-5 text-red-200">Confirmación</h2>
+            <p className="text-2xl text-center text-red-200 letra mb-5">Por favor confirma tu asistencia antes del 10 de Octubre</p>
             {confirmado ? (
-                <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative text-center">
+                <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative text-center text-3xl">
                     <strong>{mensajePersonalizado}</strong>
                 </div>
             ) : (
-                <form onSubmit={handleConfirmacion} className="space-y-4">
+                <form onSubmit={handleConfirmacion} className="space-y-4 mb-8">
                     <button
                         type="submit"
-                        className="w-full py-3 bg-green-500 text-white font-bold rounded-lg shadow-md hover:bg-green-600 transition duration-300"
+                        className="w-full py-3 bg-green-500 text-white text-3xl font-bold rounded-lg shadow-md hover:bg-green-600 transition duration-300"
                     >
                         ✅ Enviar confirmación por Whatsapp
                     </button>
