@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="fondo min-h-screen overflow-hidden">
       <div className="fixed inset-0 pointer-events-none">
-  <img className="w-full translate-x-60 translate-y-[-90px] fixed" src="/babyshower/assets/marcoderarr.png" alt="Marco superior derecho" />
+  <img className="w-full fixed" src="/babyshower/assets/marcoizqt.png" alt="Marco superior izquierdo" />
   <img className="w-full translate-x-[-150px] translate-y-80 fixed" src="/babyshower/assets/marcoizqbaj.png" alt="Marco inferior izquierdo" />
       </div>
       <div className="">
