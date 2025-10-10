@@ -1,32 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
 
 @import "tailwindcss";
 
 *{
-  
-  font-family: "tangerine", cursive;
-  
-  box-sizing: border-box;
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
 }
 
 
 
+
+
 .fondo{
-  background-color: #a5e0d6 ;
+  background-image: repeating-linear-gradient(60deg, #a5e0d6,#a5e0d6 50px , #d2f3ee 250px, #ffffff 350px,#a5e0d6 750px, #a5e0d6 850px)
 }
 
 .letra{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.letrador{
-  color: #c0b1a2
+.letragirly{
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1,h2{
-  @apply text-red-400
+  @apply text-red-950 font-bold
 }
 
 .general{
-  @apply text-red-300 text-center
+  @apply text-rose-300 text-center text-shadow-rose-200 font-light
 }

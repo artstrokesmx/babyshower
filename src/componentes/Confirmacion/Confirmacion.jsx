@@ -55,7 +55,7 @@ function Confirmacion() {
     return (
         <div className="mt-5 mx-auto max-w-xs md:max-w-sm p-4">
             <h2 className="text-6xl text-center mb-5">Confirmación</h2>
-            <p className="text-2xl text-center text-red-300 letra mb-5">Por favor confirma tu asistencia antes del 10 de Octubre</p>
+            <p className="text-3xl letragirly text-rose-300 text-shadow-black text-shadow-2xs text-center mb-5">Por favor confirma tu asistencia antes del 10 de Octubre</p>
             {confirmado ? (
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative text-center text-3xl">
                     <strong>{mensajePersonalizado}</strong>
@@ -64,7 +64,7 @@ function Confirmacion() {
                 <form onSubmit={handleConfirmacion} className="space-y-4 mb-8">
                     <button
                         type="submit"
-                        className="w-full py-3 bg-green-500 text-white text-3xl font-bold rounded-lg shadow-md hover:bg-green-600 transition duration-300"
+                        className="w-full py-3 bg-red-200 text-red-950 text-3xl font-bold rounded-lg shadow-lg hover:bg-green-600 transition duration-300"
                     >
                         ✅ Enviar confirmación por Whatsapp
                     </button>
