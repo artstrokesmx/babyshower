@@ -41,7 +41,7 @@ function Fecha() {
             <p className="text-5xl">14:00 horas</p>
             <p className="text-3xl">Faltan:</p>
             <div className="text-5xl font-bold mt-2 text-amber-600 text-shadow-lg">
-                {tiempo.dias} días, {tiempo.horas} horas, {tiempo.minutos} minutos, {tiempo.segundos} segundos
+                {tiempo.dias} días, {tiempo.horas} horas, <br /> {tiempo.minutos} minutos, {tiempo.segundos} segundos
             </div>
             <div className="w-full h-40">
                 <img className=" relative left-1/2 top-1/2 w-32 -translate-x-1/2 -translate-y-1/2 animate-bounce" src="/babyshower/assets/ele1.png" alt="Elefante" />

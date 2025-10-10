@@ -9,18 +9,12 @@
   box-sizing: border-box;
 }
 
-html{
-  background-color: #00b79c;
-}
+
 
 .fondo{
-  background-color: #00b79c ;
+  background-color: #a5e0d6 ;
 }
 
-.relleno-letras{
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
 .letra{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -29,14 +23,10 @@ html{
   color: #c0b1a2
 }
 
-/* .tangerine-regular {
-  font-family: "Tangerine", cursive;
-  font-weight: 400;
-  font-style: normal;
+h1,h2{
+  @apply text-red-400
 }
 
-.tangerine-bold {
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
-  font-style: normal;
-} */
+.general{
+  @apply text-red-300 text-center
+}

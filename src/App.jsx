@@ -11,6 +11,19 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
   const [invitado, setInvitado] = useState(null);
+  const [offsetY, setOffsetY] = useState(0);
+
+   useEffect(() => {
+    const handleScroll = () => {
+      setOffsetY(window.pageYOffset);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const verificado = localStorage.getItem('invitadoVerificado');
@@ -28,10 +41,11 @@ function App() {
   }
 
   return (
-    <div className="fondo min-h-screen overflow-hidden">
+    <div className="fondo min-h-screen overflow-hidden mx-auto w-full max-w-[425px] h-auto">
       <div className="fixed inset-0 pointer-events-none">
-  <img className="w-full fixed" src="/babyshower/assets/marcoizqt.png" alt="Marco superior izquierdo" />
-  <img className="w-full translate-x-[-150px] translate-y-80 fixed" src="/babyshower/assets/marcoizqbaj.png" alt="Marco inferior izquierdo" />
+  <img className="w-200 translate-x-[-110px] translate-y-[-80px] fixed" src="/babyshower/assets/marcoizqt.png" alt="Marco superior izquierdo" />
+  <img className="w-20 translate-x-85 translate-y-165 fixed" src="/babyshower/assets/elev.png" alt="Marco inferior izquierdo" />
+  <img className="w-20 fixed" src="/babyshower/assets/globo.png" alt="Marco inferior izquierdo" style={{transform: `translate(${307}px, ${660 - offsetY * 0.35}px)`}} />
       </div>
       <div className="">
         <Bienvenida nombre={invitado.nombre} apellido={invitado.apellido} />
