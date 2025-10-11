@@ -28,7 +28,7 @@
 }
 
 h1,h2{
-  @apply text-red-950 font-bold
+  @apply text-red-950 font-bold text-5xl
 }
 
 .general{

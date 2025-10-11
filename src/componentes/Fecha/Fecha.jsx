@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 
 function Fecha() {
-    const fechaEvento = useMemo(() => new Date("2025-10-16T00:00:00"), []);
+    const fechaEvento = useMemo(() => new Date("2025-11-22T10:30:00"), []);
     const [tiempo, setTiempo] = useState(() => {
         const ahora = new Date();
         const diferencia = fechaEvento - ahora;
@@ -37,8 +37,8 @@ function Fecha() {
     return (
         <div className="text-center mt-5 tangerine-regular border-2 border-amber-300 p-5 rounded-lg bg-white  w-90 mx-auto">
             <h2 className="text-5xl text-shadow-md text-amber-600">Mis papás quieren compartirte esta alegría</h2>
-            <p className="text-7xl mt-5">Sábado 16 Octubre de 2025</p>
-            <p className="text-5xl">14:00 horas</p>
+            <p className="text-7xl mt-5">Sábado 22 de Noviembre de 2025</p>
+            <p className="text-5xl">de 10:30 a 14:30 horas</p>
             <p className="text-3xl">Faltan:</p>
             <div className="text-5xl font-bold mt-2 text-amber-600 text-shadow-lg">
                 {tiempo.dias} días, {tiempo.horas} horas, <br /> {tiempo.minutos} minutos, {tiempo.segundos} segundos
