@@ -41,14 +41,14 @@ function App() {
   }
 
   return (
-    <div className="fondo min-h-screen overflow-hidden mx-auto w-full max-w-[425px] h-auto">
+    <div className="fondo overflow-hidden mx-auto w-full max-w-[425px] md:max-w-[425px] lg:max-w-[425px] lg:mx-auto h-auto">
       <div className="fixed inset-0 pointer-events-none">
   {/* <img className="w-3/3 max-w-[425px] translate-x-35 translate-y-[-80px] scale-x-[-1] fixed" src="/babyshower/assets/marcoizqt.png" alt="Marco superior izquierdo" /> */}
   <img className="w-20 translate-x-1 translate-y-158 z-1 fixed" src="/babyshower/assets/cuna.png" alt="Marco inferior izquierdo" />
   <img className="w-20 translate-x-85 translate-y-165 fixed" src="/babyshower/assets/elev.png" alt="Marco inferior derecha" />
   <img className="w-20 fixed" src="/babyshower/assets/globo.png" alt="Marco inferior izquierdo" style={{transform: `translate(${307}px, ${660 - offsetY * 0.275}px)`}} />
   <img className="w-20 fixed" src="/babyshower/assets/ciguena.png" alt="Marco inferior izquierdo" style = {{transform: `translate(${-10 + offsetY * 0.16}px,${-40}px)`}} />
-  <img className="w-25 fixed" src="/babyshower/assets/bolsac.png" alt="bolsa con bebé" style={{transform: `translate(${-45}px, ${-45 - offsetY * -0.275}px)`}} />
+  <img className="w-25 fixed" src="/babyshower/assets/bolsac.png" alt="bolsa con bebé" style={{transform: `translate(${-45}px, ${-45 - offsetY * -0.28}px)`}} />
       </div>
       <div className="">
         <Bienvenida nombre={invitado.nombre} apellido={invitado.apellido} />
