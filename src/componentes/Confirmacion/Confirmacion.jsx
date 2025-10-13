@@ -55,7 +55,7 @@ function Confirmacion() {
     return (
         <div className="mt-5 mx-auto max-w-xs md:max-w-sm p-4">
             <h2 className="text-6xl text-center mb-5">Confirmación</h2>
-            <p className="text-3xl letragirly text-rose-300 text-shadow-black text-shadow-2xs text-center mb-5">Por favor confirma tu asistencia antes del 10 de Noviembre</p>
+            <p className=" letragirly general mb-5">Por favor confirma tu asistencia antes del 10 de Noviembre</p>
             {confirmado ? (
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative text-center text-3xl">
                     <strong>{mensajePersonalizado}</strong>

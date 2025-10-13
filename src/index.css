@@ -8,6 +8,7 @@
   font-family: "Tangerine", cursive;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
 }
 
 
@@ -32,5 +33,5 @@ h1,h2{
 }
 
 .general{
-  @apply text-rose-300 text-center text-shadow-rose-200 font-light
+  @apply text-rose-300 text-shadow-black text-shadow-2xs font-light text-2xl
 }
