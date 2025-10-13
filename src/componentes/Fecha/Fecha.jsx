@@ -36,7 +36,7 @@ function Fecha() {
 
     return (
         <div className="text-center mt-5 tangerine-regular border-2 border-amber-300 p-5 rounded-lg bg-white  w-90 mx-auto">
-            <h2 className="text-5xl text-shadow-md text-amber-600">Mis papás quieren compartirte esta alegría</h2>
+            <h2 className="text-5xl text-shadow-md text-amber-600">Mis papás quieren compartirte esta alegría el:</h2>
             <p className="text-7xl mt-5">Sábado 22 de Noviembre de 2025</p>
             <p className="text-5xl">de 10:30 a 14:30 horas</p>
             <p className="text-3xl">Faltan:</p>

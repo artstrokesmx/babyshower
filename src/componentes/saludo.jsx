@@ -12,6 +12,7 @@ function Bienvenida({ nombre, apellido }) {
                     </p>
                 </div>
             </div>
+            <img className="mx-auto mt-4 mb-5 w-15" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
             
             <div className="text-5xl text-center text-rose-200 text-shadow-2xs text-shadow-black font-bold">
                 ¡Hola, <br /> {nombre} {apellido}!

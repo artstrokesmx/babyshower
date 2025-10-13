@@ -52,7 +52,7 @@ function App() {
       </div>
       <div className="">
         <Bienvenida nombre={invitado.nombre} apellido={invitado.apellido} />
-        <img className="mx-auto mt-3 w-15" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
+        
         <Fecha />
         <img className="mx-auto mt-3 w-15" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
         <Lugar />
