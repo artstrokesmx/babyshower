@@ -44,7 +44,7 @@ function App() {
     <div className="fondo overflow-hidden ">
       <div className=" inset-0 pointer-events-none">
         <img className="w-20 translate-x-1 z-10 fixed bottom-0" src="/babyshower/assets/cuna.png" alt="Marco inferior izquierdo" />
-        <img className="w-20 translate-x-85 translate-y-165 fixed" src="/babyshower/assets/elev.png" alt="Marco inferior derecha" />
+        <img className="w-20 translate-x-85 z-10 bottom-0 fixed" src="/babyshower/assets/elev.png" alt="Marco inferior derecha" />
         <img className="w-20 fixed" src="/babyshower/assets/globo.png" alt="Marco inferior izquierdo" style={{transform: `translate(${307}px, ${660 - offsetY * 0.275}px)`}} />
         <img className="w-22 fixed" src="/babyshower/assets/ciguena.png" alt="Marco inferior izquierdo" style = {{transform: `translate(${-25 + offsetY * 0.16}px,${-40}px)`}} />
         <img className="w-25 fixed" src="/babyshower/assets/bolsac.png" alt="bolsa con bebé" style={{transform: `translate(${-45}px, ${-45 - offsetY * -0.27}px)`}} />
