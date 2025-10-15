@@ -1,6 +1,6 @@
 function Bienvenida({ nombre, apellido }) {
     return (
-        <div className="mt-15 ml-5">
+        <div className="mt-15">
             <div className="bg-white border-amber-600 border-2 rounded-2xl w-90 mx-auto p-3 mb-3 mt-5">
                 <h1 className="h-20 font-bold text-6xl text-center text-shadow-lg ">Baby Shower</h1>
                     <img className="w-30 mx-auto" src="/babyshower/assets/eleent.png" alt="" />
@@ -12,7 +12,7 @@ function Bienvenida({ nombre, apellido }) {
                     </p>
                 </div>
             </div>
-            <img className="mx-auto mt-4 mb-5 w-15" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
+            <img className="mx-auto mt-4 mb-5 w-25" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
             
             <div className="text-5xl text-center text-rose-200 text-shadow-2xs text-shadow-black font-bold">
                 ¡Hola, <br /> {nombre} {apellido}!

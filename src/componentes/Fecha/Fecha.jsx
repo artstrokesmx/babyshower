@@ -46,6 +46,13 @@ function Fecha() {
             <div className="w-full h-40">
                 <img className=" relative left-1/2 top-1/2 w-32 -translate-x-1/2 -translate-y-1/2 animate-bounce" src="/babyshower/assets/ele1.png" alt="Elefante" />
             </div>
+            <div className="border-red-100 border-2 rounded-2xl p-1 mt-1 ml-5 mr-5 bg-red-100 hover:bg-rose-100 transition-colors duration-300">
+                <a  target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=M2RxNWN2Mjcza21iNThnMzZycTl1MjNqbTggcHNpYy5hcnR1cm9taXJhbmRhQG0&amp;tmsrc=psic.arturomiranda%40gmail.com">
+                    <p>Agrega a tu calendario en Google</p>
+                    <img className="border-0 rounded-2xl mx-auto" src="https://calendar.google.com/calendar/images/ext/gc_button1_es.gif" alt="Google Calendar"/>
+                </a>
+            </div>
+            
         </div>
     );
 }
