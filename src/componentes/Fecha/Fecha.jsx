@@ -50,7 +50,7 @@ function Fecha() {
                 <a  target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=M2RxNWN2Mjcza21iNThnMzZycTl1MjNqbTggcHNpYy5hcnR1cm9taXJhbmRhQG0&amp;tmsrc=psic.arturomiranda%40gmail.com">
                     <p>Agrega a tu calendario en Google</p>
                     <img className="border-0 rounded-2xl mx-auto" src="https://calendar.google.com/calendar/images/ext/gc_button1_es.gif" alt="Google Calendar"/>
-                </a>
+                </a>              
             </div>
             
         </div>
