@@ -1,4 +1,3 @@
-// Lista de invitados de prueba
 export const invitados = [
   { nombre: "Jessica", apellido: "Navarrete", invitados: 1, confirmado: false },
   { nombre: "Arturo", apellido: "Miranda", invitados: 3, confirmado: false },
@@ -15,7 +14,7 @@ export const invitados = [
   { nombre: "Octavio", apellido: "Moreno", invitados: 1, confirmado: false },
   { nombre: "Víctor", apellido: "Betanzos", invitados: 2, confirmado: false },
   { nombre: "Alfredo", apellido: "Gonzalez", invitados: 2, confirmado: false },
-  { nombre: "Isaac", apellido: "Mendosa", invitados: 2, confirmado: false },
+  { nombre: "Isaac", apellido: "Mendoza", invitados: 2, confirmado: false },
   { nombre: "María de Jesús", apellido: "Tapia", invitados: 2, confirmado: false },
   { nombre: "Ismene", apellido: "García", invitados: 2, confirmado: false },
   { nombre: "Jeovana", apellido: "García", invitados: 2, confirmado: false },
@@ -28,6 +27,9 @@ export const invitados = [
   { nombre: "Jair", apellido: "Vega", invitados: 1, confirmado: false },
   { nombre: "Luis", apellido: "Ortiz", invitados: 2, confirmado: false },
   { nombre: "Luis", apellido: "Hernández", invitados: 2, confirmado: false },
-  { nombre: "Jorge", apellido: "", invitados: 2, confirmado: false },
-  { nombre: "Iván", apellido: "Sánchez", invitados: 2, confirmado: false }
+  { nombre: "Jorge", apellido: "Gerini", invitados: 2, confirmado: false },
+  { nombre: "Fernanda", apellido: "Felix", invitados: 1, confirmado: false },
+  { nombre: "Amador", apellido: "Gutierrez", invitados: 1, confirmado: false },
+  { nombre: "Iván", apellido: "Sánchez", invitados: 2, confirmado: false },
+  { nombre: "Marian", apellido: "Miranda", invitados: 2, confirmado: false }
 ];

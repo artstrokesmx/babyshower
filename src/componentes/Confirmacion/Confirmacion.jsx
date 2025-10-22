@@ -4,7 +4,7 @@ import { invitados } from '../../data/invitados';
 function Confirmacion() {
     const [confirmado, setConfirmado] = useState(false);
     const [mensajePersonalizado, setMensajePersonalizado] = useState('');
-    const WHATSAPP_NUMBER = '5215528417636';
+    const WHATSAPP_NUMBER = '5215528478876';
     const [invitado, setInvitado] = useState(null);
 
     useEffect(() => {
@@ -49,7 +49,7 @@ function Confirmacion() {
         window.open(whatsappUrl, '_blank');
         // Solo para pruebas, muestra la tarjeta
         setConfirmado(true);
-        setMensajePersonalizado(`¡${invitado.nombre} ${invitado.apellido}, has sido confirmado para ${invitado.invitados} invitados!`);
+        setMensajePersonalizado(`¡${invitado.nombre} ${invitado.apellido}, has sido confirmado para ${invitado.invitados} asistentes!`);
     };
 
     return (
