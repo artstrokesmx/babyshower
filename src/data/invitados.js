@@ -1,7 +1,7 @@
 export const invitados = [
   { nombre: "Jessica", apellido: "Navarrete", invitados: 1, confirmado: false },
   { nombre: "Arturo", apellido: "Miranda", invitados: 3, confirmado: false },
-  { nombre: "Cesar", apellido: "García", invitados: 3, confirmado: false },
+  { nombre: "Cesar", apellido: "García", invitados: 3, confirmado: true },
   { nombre: "Julia", apellido: "Hernández", invitados: 1, confirmado: false },
   { nombre: "Victor", apellido: "Navarrete", invitados: 1, confirmado: false },
   { nombre: "Nallely", apellido: "Navarrete", invitados: 1, confirmado: false },
