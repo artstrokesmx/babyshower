@@ -6,11 +6,24 @@ function Verificacion({ onVerificado }) {
   const [apellido, setApellido] = useState('');
   const [error, setError] = useState('');
 
+  const normalizarTexto = (texto) => {
+    return texto
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  };
+
   const handleVerificar = (e) => {
     e.preventDefault();
-    const invitado = invitados.find(
-      (i) => i.nombre.toLowerCase() === nombre.toLowerCase() && i.apellido.toLowerCase() === apellido.toLowerCase()
-    );
+    const invitado = invitados.find((i) => {
+      const nombreNormalizado = normalizarTexto(nombre);
+      const apellidoNormalizado = normalizarTexto(apellido);
+      const invitadoNombreNormalizado = normalizarTexto(i.nombre);
+      const invitadoApellidoNormalizado = normalizarTexto(i.apellido);
+      
+      return invitadoNombreNormalizado === nombreNormalizado && 
+             invitadoApellidoNormalizado === apellidoNormalizado;
+    });
     if (invitado) {
       localStorage.setItem('invitadoVerificado', JSON.stringify(invitado));
       onVerificado(invitado);
@@ -37,7 +50,7 @@ function Verificacion({ onVerificado }) {
             />
           </div>
           <div>
-            <label htmlFor="apellido" className="block text-4xl font-medium mb-1">Apellido:</label>
+            <label htmlFor="apellido" className="block text-4xl font-medium mb-1">1 er. Apellido:</label>
             <input
               type="text"
               id="apellido"

@@ -7,7 +7,7 @@ function Bienvenida({ nombre, apellido }) {
                     <p className="letragirly general">Preparando la llegada de:</p>
                     <p className="text-6xl text-amber-500 text-center  text-shadow-sm text-shadow-black mt-3">Miranda Sofía</p>
                 <div>
-                    <p className="text-2xl">
+                    <p className="text-3xl">
                         <span className="text-4xl">"</span> Supe que los milagros existen, cuando el amor que nos tenemos empezó a palpitar y tomar forma. <br /> El amor cambio a dos esposos en una familia, al miedo en motivación y a la incertidumbre en esperanza. <br /> Hoy sólo agradecemos a Dios por este regalo tan hermoso que nos ha dado y le pedimos que nos ayude a ser los mejores padres del mundo para ti, mi amor."
                     </p>
                 </div>
