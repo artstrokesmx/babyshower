@@ -32,5 +32,6 @@ export const invitados = [
   { nombre: "Amador", apellido: "Gutierrez", invitados: 1, confirmado: false },
   { nombre: "Iván", apellido: "Sánchez", invitados: 2, confirmado: false },
   { nombre: "Marian", apellido: "Miranda", invitados: 2, confirmado: false },
-  { nombre: "Cinthia", apellido: "Xochicale", invitados: 2, confirmado: false }
+  { nombre: "Cinthia", apellido: "Xochicale", invitados: 1, confirmado: false },
+  { nombre: "Marcos", apellido: "Betanzos", invitados: 1, confirmado: false }
 ];
