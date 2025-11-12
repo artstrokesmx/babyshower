@@ -21,8 +21,8 @@ export const invitados = [
   { nombre: "José", apellido: "Loza", invitados: 2, confirmado: true },
   { nombre: "Betsua", apellido: "Preciado", invitados: 2, confirmado: true },
   { nombre: "Georgina", apellido: "Bernardino", invitados: 2, confirmado: true },
-  { nombre: "Alberto", apellido: "García", invitados: 2, confirmado: false },
-  { nombre: "Yasmin", apellido: "Ruiz", invitados: 2, confirmado: false },
+  { nombre: "Alberto", apellido: "García", invitados: 2, confirmado: true },
+  { nombre: "Yasmin", apellido: "Ruiz", invitados: 2, confirmado: true },
   { nombre: "José Luis", apellido: "Durán", invitados: 2, confirmado: true },
   { nombre: "Jair", apellido: "Vega", invitados: 1, confirmado: true },
   { nombre: "Luis", apellido: "Ortiz", invitados: 2, confirmado: false },
@@ -35,5 +35,6 @@ export const invitados = [
   { nombre: "Cinthia", apellido: "Xochicale", invitados: 1, confirmado: false },
   { nombre: "Marcos", apellido: "Betanzos", invitados: 1, confirmado: false },
   { nombre: "Vanessa", apellido: "Perez", invitados: 2, confirmado: false },
-  { nombre: "Jimena", apellido: "Silva", invitados: 1, confirmado: false }
+  { nombre: "Jimena", apellido: "Silva", invitados: 1, confirmado: false },
+  { nombre: "Fernanda", apellido: "Felix", invitados: 1, confirmado: true }
 ];
