@@ -4,7 +4,7 @@ import { invitados } from "../../data/invitados";
 // Aquí usaremos estilos en línea y algo de estructura básica.
 
 // Define tu clave de acceso. ¡Cámbiala por una real!
-const ACCESO_KEY = "MiClaveSecreta123"; 
+const ACCESO_KEY = "Jessica"; 
 
 function Estadisticas() {
   const [accesoConcedido, setAccesoConcedido] = useState(false);
@@ -90,39 +90,39 @@ const DashboardEstadisticas = () => {
       <div className='grid grid-cols-3 gap-5'>
         {/* Tarjeta de Resumen 1: Personas Totales */}
         <div className='p-2 bg-blue-100 rounded-lg shadow-md'>
-          <h3 className='text-lg'>🎟️ Boletos Confirmados (Personas)</h3>
+          <h3 className='stats'>🎟️ Boletos Confirmados (Personas)</h3>
           <p className='text-4xl font-bold text-blue-600'
           >{stats.boletosConfirmados}</p>
-          <p>De un total de <br/> {stats.boletosTotales}</p>
+          <p className='stats'>De un total de <br/> {stats.boletosTotales}</p>
         </div>
 
         {/* Tarjeta de Resumen 2: Porcentaje de Confirmación */}
-        <div style={{ padding: '20px', backgroundColor: '#fffbe0', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-          <h3 style={{ margin: '0 0 10px 0' }}>✅ Porcentaje de Confirmación (Boletos)</h3>
-          <p style={{ fontSize: '32px', fontWeight: 'bold', color: '#FFC107' }}>
+        <div className='p-2 bg-yellow-100 rounded-lg shadow-md'>
+          <h3 className='stats'>✅ Porcentaje de Confirmación (Boletos)</h3>
+          <p className='stats text-amber-700'>
             {((stats.boletosConfirmados / stats.boletosTotales) * 100).toFixed(1)}%
           </p>
-          <p>**{stats.boletosNoConfirmados}** boletos pendientes</p>
+          <p className='stats'>boletos pendientes <br/>{stats.boletosNoConfirmados}</p>
         </div>
 
         {/* Tarjeta de Resumen 3: Grupos Confirmados */}
-        <div style={{ padding: '20px', backgroundColor: '#ffe0f0', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-          <h3 style={{ margin: '0 0 10px 0' }}>👨‍👩‍👧‍👦 Grupos Confirmados</h3>
-          <p style={{ fontSize: '32px', fontWeight: 'bold', color: '#E91E63' }}>{stats.gruposConfirmados}</p>
-          <p>De **{stats.gruposTotales}** grupos/invitaciones enviadas</p>
+        <div className='p-2 bg-rose-100 rounded-lg shadow-md'>
+          <h3 className='stats'>👨‍👩‍👧‍👦 Grupos Confirmados</h3>
+          <p className='stats text-rose-500'>{stats.gruposConfirmados}</p>
+          <p className='stats'>De <br/>{stats.gruposTotales} <br/>grupos<br/>invitaciones enviadas</p>
         </div>
       </div>
 
-      <div style={{ display: 'flex', gap: '20px' }}>
+      <div className='flex gap-2'>
         {/* Tabla de Confirmados */}
-        <div style={{ flex: 1 }}>
-          <h2 style={{ color: '#4CAF50' }}>✅ Confirmados ({stats.gruposConfirmados})</h2>
+        <div className='flex-1 mt-5'>
+          <p className='text-green-600 letra'>✅ Confirmados ({stats.gruposConfirmados})</p>
           <TablaInvitados lista={stats.confirmados} />
         </div>
 
         {/* Tabla de No Confirmados */}
-        <div style={{ flex: 1 }}>
-          <h2 style={{ color: '#F44336' }}>❌ Pendientes ({stats.gruposNoConfirmados})</h2>
+        <div className='flex-1 mt-5'>
+          <p className='letra text-rose-400'>❌ Pendientes ({stats.gruposNoConfirmados})</p>
           <TablaInvitados lista={stats.noConfirmados} />
         </div>
       </div>
@@ -132,36 +132,24 @@ const DashboardEstadisticas = () => {
 
 // Componente para la tabla de invitados
 const TablaInvitados = ({ lista }) => (
-  <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '10px' }}>
+  <table className='mt-5' >
     <thead>
-      <tr style={{ backgroundColor: '#eee' }}>
-        <th style={tableHeaderStyle}>Nombre</th>
-        <th style={tableHeaderStyle}>Boletos</th>
-        <th style={tableHeaderStyle}>Estatus</th>
+      <tr className='bg-gray-200'>
+        <th className='letra text-sm'>Nombre</th>
+        <th className='letra text-sm'>Boletos</th>
+        <th className='letra text-sm'>Estatus</th>
       </tr>
     </thead>
     <tbody>
       {lista.map((invitado, index) => (
         <tr key={index} style={{ borderBottom: '1px solid #ddd' }}>
-          <td style={tableCellStyle}>{invitado.nombre} {invitado.apellido}</td>
-          <td style={{ ...tableCellStyle, textAlign: 'center' }}>{invitado.invitados}</td>
-          <td style={tableCellStyle}>{invitado.confirmado ? 'Confirmado' : 'Pendiente'}</td>
+          <td className='stats text-xs font-light'>{invitado.nombre} {invitado.apellido}</td>
+          <td className='stats text-xs font-light'>{invitado.invitados}</td>
+          <td className='stats text-xs font-light'>{invitado.confirmado ? 'Confirmado' : 'Pendiente'}</td>
         </tr>
       ))}
     </tbody>
   </table>
 );
-
-// Estilos de la tabla
-const tableHeaderStyle = {
-  padding: '12px',
-  textAlign: 'left',
-  borderBottom: '2px solid #ccc'
-};
-
-const tableCellStyle = {
-  padding: '10px',
-  borderBottom: '1px solid #eee'
-};
 
 export default Estadisticas;
