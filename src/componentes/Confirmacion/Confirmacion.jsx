@@ -66,7 +66,8 @@ function Confirmacion() {
                         type="submit"
                         className="w-full py-3 bg-red-200 text-red-950 text-3xl font-bold rounded-lg shadow-lg hover:bg-green-600 transition duration-300"
                     >
-                        ✅ Enviar confirmación por Whatsapp
+                        ✅ Enviar confirmación <br/> por Whatsapp 
+                        <span>(clic aquí)</span>
                     </button>
                 </form>
             )}

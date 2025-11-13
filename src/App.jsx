@@ -1,66 +1,34 @@
+import React from 'react';
+// Importamos los componentes de React Router DOM
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Bienvenida from './componentes/saludo';
-import Fecha from './componentes/Fecha/Fecha';
-import Lugar from './componentes/Lugar/Lugar';
-import Mesa from './componentes/Mesa/Mesa';
-import Confirmacion from './componentes/Confirmacion/Confirmacion';
-import Verificacion from './componentes/Verificacion/Verificacion';
+// Importamos el componente de la invitación que acabamos de crear
+import InvitacionApp from './componentes/InvitacionApp/InvitacionApp.jsx';
 
-
-import React, { useState, useEffect } from 'react';
+// Importamos tu componente de estadísticas
+import Estadisticas from './componentes/Estadisticas/Estadisticas.jsx';
 
 function App() {
-  const [invitado, setInvitado] = useState(null);
-  const [offsetY, setOffsetY] = useState(0);
-
-   useEffect(() => {
-    const handleScroll = () => {
-      setOffsetY(window.pageYOffset);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const verificado = localStorage.getItem('invitadoVerificado');
-    if (verificado) {
-      setInvitado(JSON.parse(verificado));
-    }
-  }, []);
-
-  const handleVerificado = (invitadoObj) => {
-    setInvitado(invitadoObj);
-  };
-
-  if (!invitado) {
-    return <Verificacion onVerificado={handleVerificado} />;
-  }
-
   return (
-    <div className="fondo overflow-hidden min-h-screen min-h-dvh">
-      <div className="inset-0 pointer-events-none">
-        <img className="w-20 translate-x-1 z-30 fixed bottom-0" src="/babyshower/assets/cuna.png" alt="Marco inferior izquierdo" />
-        <img className="w-20 translate-x-85 z-10 bottom-0 fixed" src="/babyshower/assets/elev.png" alt="Marco inferior derecha" />
-        <img className="w-10 z-20 fixed" src="/babyshower/assets/globo.png" alt="Marco inferior izquierdo" style={{transform: `translate(${330}px, ${660 - offsetY * 0.275}px)`}} />
-        <img className="w-22 z-20 fixed" src="/babyshower/assets/ciguena.png" alt="Marco inferior izquierdo" style = {{transform: `translate(${-21 + offsetY * 0.16}px,${1}px)`}} />
-        <img className="w-5 z-10 fixed" src="/babyshower/assets/bolsac.png" alt="bolsa con bebé" style={{transform: `translate(${35}px, ${25 - offsetY * -0.278}px)`}} />
-      </div>
-      <div className="">
-        <Bienvenida nombre={invitado.nombre} apellido={invitado.apellido} />
+    // 1. Usamos Router. Es importante que uses BrowserRouter.
+    // 2. Si estás desplegando en un subdirectorio (como /babyshower/), 
+    //    es crucial usar la propiedad 'basename'.
+    <Router basename="/babyshower"> 
+      <Routes>
+        {/* Ruta 1: La ruta principal (artstrokesmx.io/babyshower/)
+          Cuando la URL es '/', se carga el componente InvitacionApp.
+        */}
+        <Route path="/" element={<InvitacionApp />} />
         
-        <Fecha />
-        <img className="mx-auto mt-3 w-25" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
-        <Lugar />
-        <img className="mx-auto mt-3 w-25" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
-        <Mesa />
-        <img className="mx-auto mt-3 w-25" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
-        <Confirmacion />
-      </div>
-    </div>
+        {/* Ruta 2: La ruta secreta (artstrokesmx.io/babyshower/estadisticas)
+          Cuando la URL es '/estadisticas', se carga el componente Estadisticas.
+        */}
+        <Route path="/estadisticas" element={<Estadisticas />} />
+
+        {/* Puedes añadir una ruta de 404 si lo necesitas */}
+        {/* <Route path="*" element={<div>404 No Encontrado</div>} /> */}
+      </Routes>
+    </Router>
   );
 }
 

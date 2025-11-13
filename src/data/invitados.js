@@ -1,6 +1,6 @@
 export const invitados = [
   { nombre: "Jessica", apellido: "Navarrete", invitados: 1, confirmado: true },
-  { nombre: "Arturo", apellido: "Miranda", invitados: 3, confirmado: true },
+  { nombre: "Arturo", apellido: "Miranda", invitados: 1, confirmado: true },
   { nombre: "Cesar", apellido: "García", invitados: 3, confirmado: true },
   { nombre: "Julia", apellido: "Hernández", invitados: 1, confirmado: true },
   { nombre: "Victor", apellido: "Navarrete", invitados: 1, confirmado: true },
@@ -36,5 +36,13 @@ export const invitados = [
   { nombre: "Marcos", apellido: "Betanzos", invitados: 1, confirmado: false },
   { nombre: "Vanessa", apellido: "Perez", invitados: 2, confirmado: false },
   { nombre: "Jimena", apellido: "Silva", invitados: 1, confirmado: false },
-  { nombre: "Fernanda", apellido: "Felix", invitados: 1, confirmado: true }
+  { nombre: "Ilse", apellido: "Lopez", invitados: 1, confirmado: false },
+  { nombre: "Kassandra", apellido: "Mendivil", invitados: 1, confirmado: false },
+  { nombre: "Alberto", apellido: "Herrera", invitados: 1, confirmado: false },
+  { nombre: "Brian", apellido: "Luna", invitados: 1, confirmado: false },
+  { nombre: "Fernanda", apellido: "Petrearse", invitados: 1, confirmado: false },
+  { nombre: "Lizbeth", apellido: "Saavedra", invitados: 1, confirmado: false },
+  { nombre: "Pedro", apellido: "Torrello", invitados: 1, confirmado: false },
+  { nombre: "Teresa", apellido: "Sanchez", invitados: 1, confirmado: false },
+  { nombre: "Ximena", apellido: "Delgado", invitados: 1, confirmado: false }
 ];
