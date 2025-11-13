@@ -53,7 +53,8 @@ function Confirmacion() {
     };
 
     return (
-        <div className="mt-5 mx-auto max-w-xs md:max-w-sm p-4">
+        <div className="mt-5 w-90 mx-auto md:max-w-sm p-4 border-2 border-amber-300 rounded-lg bg-white">
+            {/* text-center tangerine-regular border-2 border-amber-300 p-5 rounded-lg bg-white  w-90 mx-auto */}
             <h2 className="text-6xl text-center mb-5">Confirmación</h2>
             <p className=" letragirly general mb-5">Por favor confirma tu asistencia antes del 10 de Noviembre</p>
             {confirmado ? (

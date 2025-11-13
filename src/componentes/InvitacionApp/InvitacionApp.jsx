@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 import Bienvenida from '../saludo.jsx';
 import Fecha from '../Fecha/Fecha.jsx';
@@ -5,6 +6,8 @@ import Lugar from '../Lugar/Lugar.jsx';
 import Mesa from '../Mesa/Mesa';
 import Confirmacion from '../Confirmacion/Confirmacion';
 import Verificacion from '../Verificacion/Verificacion';
+
+import Estadisticas from '../Estadisticas/Estadisticas.jsx';
 
 
 import React, { useState, useEffect } from 'react';
@@ -47,7 +50,7 @@ function App() {
         <img className="w-20 translate-x-85 z-10 bottom-0 fixed" src="/babyshower/assets/elev.png" alt="Marco inferior derecha" />
         <img className="w-10 z-20 fixed" src="/babyshower/assets/globo.png" alt="Marco inferior izquierdo" style={{transform: `translate(${330}px, ${660 - offsetY * 0.275}px)`}} />
         <img className="w-22 z-20 fixed" src="/babyshower/assets/ciguena.png" alt="Marco inferior izquierdo" style = {{transform: `translate(${-21 + offsetY * 0.16}px,${1}px)`}} />
-        <img className="w-5 z-10 fixed" src="/babyshower/assets/bolsac.png" alt="bolsa con bebé" style={{transform: `translate(${35}px, ${25 - offsetY * -0.278}px)`}} />
+        <img className="w-5 z-10 fixed" src="/babyshower/assets/bolsac.png" alt="bolsa con bebé" style={{transform: `translate(${35}px, ${25 - offsetY * -0.240}px)`}} />
       </div>
       <div className="">
         <Bienvenida nombre={invitado.nombre} apellido={invitado.apellido} />
@@ -59,8 +62,15 @@ function App() {
         <Mesa />
         <img className="mx-auto mt-3 w-25" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
         <Confirmacion />
+        <img className="mx-auto mt-3 w-25" src="/babyshower/assets/linea.png" alt="viñeta elefantes" />
+        <Link to="/estadisticas"> 
+            <div 
+                className='w-full h-15 bg-rose-200 cursor-pointer'>
+            </div>
+        </Link>
       </div>
     </div>
+    
   );
 }
 
