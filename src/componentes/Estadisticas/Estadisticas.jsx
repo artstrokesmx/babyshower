@@ -1,16 +1,12 @@
 import React, { useState, useMemo } from 'react';
 import { invitados } from "../../data/invitados";
-// Si usas styled-components, Tailwind, o un framework CSS, ajusta las clases.
-// Aquí usaremos estilos en línea y algo de estructura básica.
 
-// Define tu clave de acceso. ¡Cámbiala por una real!
 const ACCESO_KEY = "Jessica"; 
 
 function Estadisticas() {
   const [accesoConcedido, setAccesoConcedido] = useState(false);
   const [inputKey, setInputKey] = useState('');
 
-  // Función para manejar el intento de acceso
   const handleLogin = (e) => {
     e.preventDefault();
     if (inputKey === ACCESO_KEY) {
@@ -20,20 +16,20 @@ function Estadisticas() {
     }
   };
 
-  // --- Renderizado del formulario de acceso (si no ha accedido) ---
   if (!accesoConcedido) {
     return (
       <div style={{ padding: '20px', textAlign: 'center' }}>
-        <h2>🔒 Área Restringida</h2>
+        <h2 className='mb-5'>🔒 Área Restringida</h2>
         <form onSubmit={handleLogin}>
           <input
             type="password"
             placeholder="Introduce la clave de acceso"
             value={inputKey}
             onChange={(e) => setInputKey(e.target.value)}
-            style={{ padding: '10px', margin: '10px 0', width: '250px' }}
+            className='p-3 mb-5 border-pink-100 border-2 text-center rounded-2xl stats w-100'
+            //style={{ padding: '10px', margin: '10px 0', width: '250px' }}
           />
-          <button type="submit" style={{ padding: '10px 15px', display: 'block', margin: '10px auto', backgroundColor: '#4CAF50', color: 'white', border: 'none', cursor: 'pointer' }}>
+          <button type="submit" className='p-1 m-auto bg-green-600 text-white block stats rounded-lg w-40'>
             Acceder
           </button>
         </form>
@@ -132,7 +128,7 @@ const DashboardEstadisticas = () => {
 
 // Componente para la tabla de invitados
 const TablaInvitados = ({ lista }) => (
-  <table className='mt-5' >
+  <table className='mt-5 mx-auto' >
     <thead>
       <tr className='bg-gray-200'>
         <th className='letra text-sm'>Nombre</th>
