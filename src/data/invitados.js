@@ -44,5 +44,6 @@ export const invitados = [
   { nombre: "Lizbeth", apellido: "Saavedra", invitados: 1, confirmado: false },
   { nombre: "Pedro", apellido: "Torrello", invitados: 1, confirmado: false },
   { nombre: "Teresa", apellido: "Sanchez", invitados: 1, confirmado: false },
-  { nombre: "Ximena", apellido: "Delgado", invitados: 1, confirmado: false }
+  { nombre: "Ximena", apellido: "Delgado", invitados: 1, confirmado: false },
+  { nombre: "Ximena", apellido: "Hernandez", invitados: 2, confirmado: false }
 ];
